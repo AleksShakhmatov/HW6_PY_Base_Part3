@@ -71,7 +71,7 @@ class TestCart:
         cart.remove_product(product, 77)
         assert product not in cart.products
 
-    def test_remove_product_entirely(self, cart, product):
+    def test_remove_product_all(self, cart, product):
         cart.add_product(product, 77)
         cart.remove_product(product)
         assert product not in cart.products
